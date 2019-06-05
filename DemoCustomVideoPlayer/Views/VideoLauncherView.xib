@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoLauncherView" customModule="DemoCustomVideoPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="n7O-sY-KYh" id="QsP-Bm-1R0"/>
+                <outlet property="videoPlayerView" destination="zKh-TZ-pHR" id="10w-vp-LC8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="n7O-sY-KYh">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKh-TZ-pHR" customClass="VideoPlayerView" customModule="DemoCustomVideoPlayer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="284.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zKh-TZ-pHR" secondAttribute="height" multiplier="16/11" id="HdO-1g-qeQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGh-aP-YB1">
+                    <rect key="frame" x="0.0" y="328.5" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHẠY NGAY ĐI | RUN NOW | SƠN TÙNG M-TP | Official Music Video" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow1-h3-LIh">
+                            <rect key="frame" x="15" y="8.5" width="391" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ow1-h3-LIh" firstAttribute="centerY" secondItem="oGh-aP-YB1" secondAttribute="centerY" id="FrW-ph-B65"/>
+                        <constraint firstAttribute="height" constant="55" id="W2u-gK-jvL"/>
+                        <constraint firstItem="ow1-h3-LIh" firstAttribute="leading" secondItem="oGh-aP-YB1" secondAttribute="leading" constant="15" id="fO7-af-iOQ"/>
+                        <constraint firstAttribute="trailing" secondItem="ow1-h3-LIh" secondAttribute="trailing" constant="8" id="ufU-FV-MiP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-Pb-JoA">
+                    <rect key="frame" x="0.0" y="383.5" width="414" height="55"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_ic" translatesAutoresizingMaskIntoConstraints="NO" id="HRG-X0-x4j">
+                            <rect key="frame" x="15" y="10" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="HRG-X0-x4j" secondAttribute="height" id="gUJ-L8-HBU"/>
+                                <constraint firstAttribute="width" constant="35" id="kka-p8-XWl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="17.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sơn Tùng M-TP Official" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmb-4y-db8">
+                            <rect key="frame" x="58" y="10" width="146" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.9M subscribers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHL-va-uqx">
+                            <rect key="frame" x="58" y="26" width="105" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-Tp-f3w">
+                            <rect key="frame" x="314" y="12.5" width="90" height="30"/>
+                            <color key="backgroundColor" red="0.86195272842639592" green="0.0084086837282513916" blue="0.016478464826443402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="qbO-hc-n3u"/>
+                                <constraint firstAttribute="height" constant="30" id="txU-Ij-DTY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Dmb-4y-db8" firstAttribute="leading" secondItem="HRG-X0-x4j" secondAttribute="trailing" constant="8" id="7c2-Nc-kiI"/>
+                        <constraint firstItem="jHL-va-uqx" firstAttribute="leading" secondItem="Dmb-4y-db8" secondAttribute="leading" id="8dg-zf-VT8"/>
+                        <constraint firstItem="Dmb-4y-db8" firstAttribute="top" secondItem="HRG-X0-x4j" secondAttribute="top" id="A7g-Iz-rdr"/>
+                        <constraint firstAttribute="height" constant="55" id="ZeA-4U-ciM"/>
+                        <constraint firstAttribute="trailing" secondItem="5fk-Tp-f3w" secondAttribute="trailing" constant="10" id="aDJ-xn-Kz4"/>
+                        <constraint firstItem="5fk-Tp-f3w" firstAttribute="centerY" secondItem="R7M-Pb-JoA" secondAttribute="centerY" id="dTF-zQ-dqw"/>
+                        <constraint firstItem="HRG-X0-x4j" firstAttribute="leading" secondItem="R7M-Pb-JoA" secondAttribute="leading" constant="15" id="gg2-BA-I77"/>
+                        <constraint firstItem="jHL-va-uqx" firstAttribute="top" secondItem="Dmb-4y-db8" secondAttribute="bottom" id="hXi-bO-y5b"/>
+                        <constraint firstItem="HRG-X0-x4j" firstAttribute="centerY" secondItem="R7M-Pb-JoA" secondAttribute="centerY" id="yl7-qq-9aM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oGh-aP-YB1" secondAttribute="trailing" id="HYb-bG-Gze"/>
+                <constraint firstItem="oGh-aP-YB1" firstAttribute="leading" secondItem="xAY-3x-YN4" secondAttribute="leading" id="IyI-AP-y9F"/>
+                <constraint firstItem="zKh-TZ-pHR" firstAttribute="leading" secondItem="xAY-3x-YN4" secondAttribute="leading" id="OQ6-k4-5NC"/>
+                <constraint firstItem="xAY-3x-YN4" firstAttribute="trailing" secondItem="zKh-TZ-pHR" secondAttribute="trailing" id="PC4-6j-XbM"/>
+                <constraint firstItem="R7M-Pb-JoA" firstAttribute="top" secondItem="oGh-aP-YB1" secondAttribute="bottom" id="Xd4-ku-3KP"/>
+                <constraint firstItem="R7M-Pb-JoA" firstAttribute="leading" secondItem="xAY-3x-YN4" secondAttribute="leading" id="YyI-ef-JNF"/>
+                <constraint firstItem="oGh-aP-YB1" firstAttribute="top" secondItem="zKh-TZ-pHR" secondAttribute="bottom" id="rmY-Cw-V8s"/>
+                <constraint firstItem="R7M-Pb-JoA" firstAttribute="trailing" secondItem="xAY-3x-YN4" secondAttribute="trailing" id="t7s-wx-RSh"/>
+                <constraint firstItem="zKh-TZ-pHR" firstAttribute="top" secondItem="xAY-3x-YN4" secondAttribute="top" id="vfp-kq-JZa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xAY-3x-YN4"/>
+            <point key="canvasLocation" x="-1" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_ic" width="144" height="144"/>
+    </resources>
+</document>
